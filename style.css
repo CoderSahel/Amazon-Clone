@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.navbar{
+    height: auto;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.border{
+    border: 1.2px solid transparent;
+}
+.border:hover{
+    border: 1.2px solid white;
+    border-radius: 2px;
+}
+/* first box in navbar */
+.nav-logo {
+    height: 50px;
+    width: 120px;
+}
+.logo{
+    background-image: url(static/amazon_logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:60px;
+    width: 120px;
+    background-position: center;
+}
+
+/* second box in navbar */
+.nav-address{
+    height: 50px;
+    width: 80px;
+    /* padding-top: 10px;*/
+    padding-left: 10px; 
+}
+.deliver{
+    font-size: 0.75rem;
+    color: #cccccc;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.address{
+    display: flex;   
+    align-items: center; 
+}
+.india{
+    font-size: 0.85rem;
+    margin-left: 4px;
+    font-weight: 600;
+}
+/* search box */
+.nav-search{
+    display: flex;
+    align-items: center;
+    height:50px;
+    /* min-width:55%; */
+    width: 60%; 
+    margin:5px;
+    flex-shrink: 4;
+}
+.search-select{
+    height: 40px;
+    width: auto;
+    color: rgb(129, 126, 126);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-align: center;
+    border: none;
+
+}
+.search-input{
+    height: 40px;
+    min-width: 250px;
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 5px;
+    border-top:none;
+    border-right:none;
+    border-bottom:none;
+    border-left-color: rgb(243, 243, 243);
+    flex-shrink: 3;
+}
+.search-icon{
+    background-color: orange;
+    height: 40px;
+    width: 40px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.search-icon:hover{
+    background-color: orangered;
+    height: 40px;
+    width: 40px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* hello box in nav-bar */
+.nav-hello{
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.hello{
+    font-size: 0.75rem;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+.account{
+    font-size: 0.85rem;
+    background: none;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+/* orer box in nav-bar */
+
+.nav-order{
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.return{
+    font-size: 0.75rem;
+    /* margin-left: 4px; */
+    margin-top: 10px;
+}
+.order{
+    font-size: 0.85rem;
+    background: none;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+/* cart box in nav-bar */
+.nav-cart{
+    display: flex;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.cart-logo{
+    padding: 15px 0px 15px 0px;
+    font-size: 1.2rem;
+
+}
+.cart{
+    padding-top: 25px;
+    font-size: 0.85rem;
+    background: none;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+/* second panel */
+
+.panel{
+    background-color: #1b1d1d;
+    height: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.panel-all{
+    padding: 10px 10px 10px 10px;
+    margin-left: 20px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.panel-item-all{
+    margin-left: 4px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.panel-item-grp{
+    display: flex;
+    flex-wrap: wrap;
+}
+.panel-items{
+    padding: 10px 10px 10px 10px;
+    margin-left: 4px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* content */
+.main-body{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(#324065 30%, #ffffff);
+}
+.content-backgroud{
+    background-image: url(static/hero_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+/* shopping card*/
+
+.shop-card{
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    background-color: whitesmoke;
+    width:20%;
+    min-width: 280px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-image{
+    background-size: cover;
+    width:auto;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* footer panel 1*/
+.foot-panel1{
+    background-color: #1b1d1d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* footer panel 2 */
+.foot-panel2{
+    background-color: #0f1111;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.footer-list p{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-list a{
+    margin-top: 8px;
+    color: #cccccc;
+}
+
+/*footer panel 3*/
+.foot-panel3{
+    background-color: #0f1111;
+    border-top: 2px #aaaaaa solid;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+}
+.foot-logo{
+    background-image: url("static/amazon_logo.png");
+    background-size:cover;
+    height: 50px;
+    width: 100px;
+    margin-right: 100px;
+}
+.foot-box{
+    padding: 10px;
+    display: flex;
+    color: #aaaaaa;
+    border-radius: 3px;
+    border: 2px #cccccc solid;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.foot-box p{
+    margin-left: 5px;
+}
